@@ -4,22 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery Ajax Tutorial</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <h1>jQuery Ajax Tutorial</h1>
     <ul id="orders"></ul>
     <template id="order-template">
-      <li data-id='{{id}}'>
-        <p><strong>Name:</strong>
-             <span class="noEdit name">{{name}</span>
-             <input type="text" class="editName">
-            </p>
-        <p><strong>
-            Drink:</strong>
-             <span class="noEdit drink">{{drink}}</span>
-             <input type="text" class="editDrink">
-            </p>
+      <li data-id="{{id}}">
+        <p>
+          <strong>Name:</strong>
+          <span class="noEdit name">{{name}}</span>
+          <input type="text" class="editName" />
+        </p>
+        <p>
+          <strong>Drink:</strong>
+          <span class="noEdit drink">{{drink}}</span>
+          <input type="text" class="editDrink" />
+        </p>
         <button data-id="{{id}}" class="remove">X</button>
         <button class="editOrder noEdit">Edit</button>
         <button class="saveEdit edit">Save</button>
